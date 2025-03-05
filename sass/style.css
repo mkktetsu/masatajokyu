@@ -169,7 +169,7 @@ select::-ms-expand {
 
 .header.change-color {
   background-color: #222222;
-  transition: 0.3s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .header.change-color {
@@ -200,11 +200,7 @@ select::-ms-expand {
 }
 
 .header__name {
-  color: #F9F2E5;
-  font-family: "Cormorant", serif;
-  font-size: 18px;
-  width: 150px;
-  margin-right: auto;
+  width: 171px;
   margin-left: 5px;
 }
 @media screen and (max-width: 1024px) {
@@ -216,9 +212,8 @@ select::-ms-expand {
 }
 
 .header__nav {
-  margin-left: auto;
-  margin-right: auto;
   height: inherit;
+  padding-right: 45px;
 }
 
 .header__logo {
@@ -243,12 +238,14 @@ select::-ms-expand {
   color: #F9F2E5;
   display: flex;
   height: inherit;
-  padding: 0 30px;
+  padding: 0 27px;
   align-items: center;
 }
 
-.header__contact {
+.contact-button.header__contact {
   margin: 0 auto;
+  margin-right: 5px;
+  letter-spacing: 0.05em;
 }
 
 .header__about__section-title {
@@ -435,7 +432,7 @@ select::-ms-expand {
 .mv__title-inner {
   position: absolute;
   z-index: 500;
-  top: 55%;
+  top: 55.5%;
   left: 205px;
   transform: translateY(-50%);
   background-color: transparent;
@@ -470,7 +467,7 @@ select::-ms-expand {
   font-family: "Noto Serif JP", serif;
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.03em;
   margin-top: 5px;
 }
 @media screen and (max-width: 768px) {
@@ -1251,10 +1248,11 @@ select::-ms-expand {
 .contact__contact-button {
   font-size: 16px;
   letter-spacing: 0.05em;
+  font-family: "Cormorant", serif;
   margin: 0 auto;
   padding-bottom: 80px;
   width: 265px;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 @media screen and (max-width: 375px) {
   .contact__contact-button {
@@ -1336,14 +1334,12 @@ footer {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  height: auto;
+  height: 543px;
   padding-top: 37.708%;
   background-image: url(/images/pc2__about-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
-  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .sub-mv {
@@ -2272,13 +2268,14 @@ iframe .modal__content {
 
 .inner {
   margin: 0 auto;
-  padding-top: 70px;
-  z-index: 10;
-  max-width: 83.333%;
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 25px;
 }
 @media screen and (max-width: 768px) {
   .inner {
-    padding-top: 0;
+    padding: 0 15px;
+    max-width: 600px;
   }
 }
 
@@ -2384,13 +2381,13 @@ iframe .modal__content {
 
 .contact-button {
   position: relative;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Cormorant", serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 30px;
+  padding: 10px 32px;
   color: #F9F2E5;
-  border-radius: 6px;
+  border-radius: 3px;
   background-color: transparent;
   border: 1px solid #F9F2E5;
 }

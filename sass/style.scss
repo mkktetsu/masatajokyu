@@ -28,7 +28,7 @@
 
 .header.change-color {
     background-color: $black3; 
-    transition: 0.3s ease-in-out;
+    transition: 0.8s ease-in-out;
     @include mq("md") {
         background-color: $black3;  // 768px以下でも背景色を維持
     }
@@ -54,11 +54,8 @@
 
 }
 .header__name {
-    color: $white;
-    font-family: $forth-font;
-    font-size: 18px;
-    width: 150px;
-    margin-right: auto;
+    width: 171px;
+   // margin-right: auto;
     margin-left: 5px;
     @include mq("lg") {
         width: 132px;
@@ -67,9 +64,8 @@
     }
 }
 .header__nav {
-    margin-left: auto;
-    margin-right: auto;
     height: inherit;
+    padding-right: 45px;
 }
 .header__logo {
     width: 100%;
@@ -94,13 +90,14 @@
     color: $white;
     display: flex;
     height: inherit;
-    padding: 0 30px; 
+    padding: 0 27px; 
     align-items: center;
 }
 
-.header__contact{
+.contact-button.header__contact {
     margin:0 auto;
-  //  margin-right: 20px;
+    margin-right: 5px;
+    letter-spacing: 0.05em;
 }
 
 
@@ -284,7 +281,7 @@
 .mv__title-inner {
     position: absolute;
     z-index: 500;
-    top: 55%;
+    top: 55.5%;
     left: 205px;
     transform: translateY(-50%);
     background-color: transparent;
@@ -327,7 +324,7 @@
     font-family: $base-font;
     font-weight: 400;
     font-size: 18px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.03em;
     margin-top: 5px;
 
     @include mq("md") {
@@ -1060,12 +1057,11 @@ margin-top: 45px;
 .contact__contact-button {
     font-size: 16px;
     letter-spacing: 0.05em;
-    //width: 265px;
-    //height: 55px;
+    font-family: $forth-font;
     margin: 0 auto;
     padding-bottom: 80px;
     width: 265px;
-    border-radius: 6px;
+    border-radius: 3px;
     @include mq("sp") {
         font-size: 14px;
         font-weight: 300;
@@ -1128,23 +1124,19 @@ footer {
     }
 }
 
-//PC2=aboutページ-----------------//PC2=aboutページ
+//アバウトページ-----------------//PC2=aboutページ
 //-------------------------------------------------
 .sub-mv {
     position: relative;
     width: 100vw;  // ビューポート幅いっぱいに
     margin-left: calc(50% - 50vw);  // 中央揃えのオフセット
     margin-right: calc(50% - 50vw);
-    height: auto;
-  //  aspect-ratio: 1440/543;
+    height: 543px;
     padding-top: 37.708%; //上記アスペクト比の代わり
     background-image: url(/images/pc2__about-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
-    z-index: 100;
-
     @include mq("md") {
         background-image: url(/images/pc2__about-bg-sp.jpg);
         width: 100vw;
@@ -1956,11 +1948,14 @@ iframe
 }
 .inner {
     margin: 0 auto;
-    padding-top: 70px;
-    z-index: 10;
-    max-width: 83.333%;
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 25px;
+   // padding-top: 70px;
+  //  z-index: 10;
     @include mq("md") {
-        padding-top: 0;
+        padding: 0 15px;
+        max-width: 600px;
     }
 }
 .section-inner {
@@ -2053,18 +2048,15 @@ iframe
 //コンタクトボタン
 .contact-button {
     position: relative;
-    font-family: $base-font;
+    font-family: $forth-font;
     display: flex;//縦横中央寄せにしたい
     align-items: center;
     justify-content: center;
-    padding: 10px 30px;
+    padding: 10px 32px;
     color: $white;
-    border-radius: 6px;
+    border-radius: 3px;
     background-color: transparent;
-    border: 1px solid $white;
-    // @include mq("lg") {
-    //     padding: 11px 45px;
-    //         }
+    border: 1px solid $white;               
     @include mq("sp") {
         font-size: 14px;
         border-radius: 6px;
