@@ -439,8 +439,8 @@
     }
 }
 
-.about__title-wrap {
-    padding-top: 0px;//
+.title-wrap.about__title-wrap {
+    padding-top: 75px;
     @include mq("md") {
         padding-top: 52px;
     }
@@ -469,7 +469,7 @@
     flex-direction: row-reverse;
     gap: 35px;
     padding-top: 75px;
-    padding-left: 3rem;
+  //  padding-left: 3rem;
     @include mq("md") {
         display: block;
         padding-top: 30px;
@@ -477,12 +477,13 @@
     }
 }
 .about__text-text {
+    font-family: $base-font;
     font-size: 22px;
     color: $white;
     writing-mode: vertical-rl; /* 縦書きに変更 */
-    padding-top: 25px;
-    line-height: 2;
-    letter-spacing: 0.37em;
+    padding-top: 20px;
+    line-height: 40px;
+    letter-spacing: 9.05px;
     @include mq("md") {
         font-size: 14px;
         font-weight: $regular;
@@ -532,11 +533,11 @@
     font-size: 16px;
     text-align: left;
     line-height: 2;
-    margin-top: -65px;
+    margin-top: -60px;
     margin-right: auto;
     margin-left: auto;
-    width: 52%;
-    padding-left: 2rem;
+    max-width: 600px;
+   // padding-left: 2rem;
     @include mq("md") {
         width: 86%;
         font-size: 14px;
@@ -556,10 +557,12 @@
 
 
 .button--view-more{
+    font-family: $base-font;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 38px auto 0;
+    margin: 40px auto 0;
     padding-bottom: 80px;
     z-index: 10;
     @include mq("md") {
@@ -567,6 +570,14 @@
         padding-bottom: 55px;
         margin-bottom: -4px;
     }
+}
+
+.contact-button.about__contact-button--small {
+    font-family: $base-font;
+    padding: 15px 59px;
+    font-size: 16px;
+    letter-spacing: 0.05;
+
 }
 
 
@@ -2005,8 +2016,8 @@ iframe
     font-family: $forth-font;
     font-weight: $regular;
     font-size: 38px;
-    letter-spacing: 0.07em;
-    padding-left: 36px;
+    letter-spacing: 0.04em;
+    padding-left: 33px;
     overflow: hidden;
     @include mq("lg") {
         font-size: 32px;
@@ -2025,7 +2036,7 @@ iframe
     width: calc(100% - 10px); /* 要素の幅を設定 */
     height: 0; /* ボーダーの高さを0に設定 */
     border-top: 1px solid $gray2; /* 上部ボーダーのスタイルを設定 */
-    margin-left: 1rem; /* 左側の余白を設定 */
+    margin-left: 2rem; /* 左側の余白を設定 */
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /* 中央揃えのために上方向に移動 */
@@ -2096,13 +2107,6 @@ iframe
 .header__contact::after {
     display: none;
 }
-// .about__contact-button--small {
-//     letter-spacing: 0.05em;
-//     font-size: 14px;
-//     font-weight: 300;
-//     margin: 0 auto;
-//     padding: 15px 60px;
-//     @include mq("md") {
 
 
 //     }

@@ -583,16 +583,16 @@ select::-ms-expand {
   }
 }
 
-.about__title-wrap {
-  padding-top: 0px;
+.title-wrap.about__title-wrap {
+  padding-top: 75px;
 }
 @media screen and (max-width: 768px) {
-  .about__title-wrap {
+  .title-wrap.about__title-wrap {
     padding-top: 52px;
   }
 }
 @media screen and (max-width: 375px) {
-  .about__title-wrap {
+  .title-wrap.about__title-wrap {
     padding-top: 55px;
   }
 }
@@ -613,7 +613,6 @@ select::-ms-expand {
   flex-direction: row-reverse;
   gap: 35px;
   padding-top: 75px;
-  padding-left: 3rem;
 }
 @media screen and (max-width: 768px) {
   .about__section-inner {
@@ -624,12 +623,13 @@ select::-ms-expand {
 }
 
 .about__text-text {
+  font-family: "Noto Serif JP", serif;
   font-size: 22px;
   color: #F9F2E5;
   writing-mode: vertical-rl; /* 縦書きに変更 */
-  padding-top: 25px;
-  line-height: 2;
-  letter-spacing: 0.37em;
+  padding-top: 20px;
+  line-height: 40px;
+  letter-spacing: 9.05px;
 }
 @media screen and (max-width: 768px) {
   .about__text-text {
@@ -689,11 +689,10 @@ select::-ms-expand {
   font-size: 16px;
   text-align: left;
   line-height: 2;
-  margin-top: -65px;
+  margin-top: -60px;
   margin-right: auto;
   margin-left: auto;
-  width: 52%;
-  padding-left: 2rem;
+  max-width: 600px;
 }
 @media screen and (max-width: 768px) {
   .about-text-caver {
@@ -716,10 +715,12 @@ select::-ms-expand {
 }
 
 .button--view-more {
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 38px auto 0;
+  margin: 40px auto 0;
   padding-bottom: 80px;
   z-index: 10;
 }
@@ -729,6 +730,13 @@ select::-ms-expand {
     padding-bottom: 55px;
     margin-bottom: -4px;
   }
+}
+
+.contact-button.about__contact-button--small {
+  font-family: "Noto Serif JP", serif;
+  padding: 15px 5px;
+  font-size: 16px;
+  letter-spacing: 0.05;
 }
 
 .service {
@@ -2332,8 +2340,8 @@ iframe .modal__content {
   font-family: "Cormorant", serif;
   font-weight: 300;
   font-size: 38px;
-  letter-spacing: 0.07em;
-  padding-left: 36px;
+  letter-spacing: 0.04em;
+  padding-left: 33px;
   overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
@@ -2356,7 +2364,7 @@ iframe .modal__content {
   width: calc(100% - 10px); /* 要素の幅を設定 */
   height: 0; /* ボーダーの高さを0に設定 */
   border-top: 1px solid #99958F; /* 上部ボーダーのスタイルを設定 */
-  margin-left: 1rem; /* 左側の余白を設定 */
+  margin-left: 2rem; /* 左側の余白を設定 */
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* 中央揃えのために上方向に移動 */
