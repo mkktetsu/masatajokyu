@@ -577,8 +577,7 @@
     padding: 15px 59px;
     font-size: 16px;
     letter-spacing: 0.05;
-
-}
+    
 
 
 
@@ -593,7 +592,7 @@
     }
 }
 .title-wrap--service {
-    padding-top: 55px;
+    padding-top: 74px;
 }
 .section-inner.section-inner--service{
   //  margin-bottom: 60px;
@@ -636,47 +635,32 @@ gap: 15px;
     font-family: $base-font;
     font-size: 16px;
     font-weight: $regular;
+    list-style: 0.05px;
     cursor: pointer;
     padding-bottom: 2px;
     border-bottom: 1px solid transparent;
-    color: $white;
+    color: #2c2c2c;
     padding: 10px 15px;
-    transition: all 0.4s ease-out;
+    background-color: $black3;
+  //  transition: all 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
     position: relative;
     overflow: hidden;
-
     @include mq("md") {
         font-size: 14px;
         padding: 4px 15px;
         white-space: nowrap;
     }
-
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 1px;
-    //     background-color: $black1;
-    //     transform: translateX(-100%);
-    //     transition: transform 0.6s ease-out;
-    // }
-
     &:hover,
     &.is-active {
-        background-color: rgba(0, 0, 0, 0.3);
-        border-bottom-color: $black3;
+    border-bottom-color: $white;
     }
 
-    &:hover::after,
-    &.is-active::after {
-        transform: translateX(0);
-    }
 }
 .tab__button {
     letter-spacing: 0.05em;
     box-shadow: 3px 3px 6px #2e2b2b;
+    
 }
 
 .tab__contents {
@@ -2108,18 +2092,6 @@ iframe
     display: none;
 }
 
-
-//     }
-// }
-
-//影が出るボタン
-//.contact-button--shadow {
-
-//}
-//ボタンの後の矢印
-//.contact-button::after{
-
-//}
 
 .sp-show {
     display: none;
