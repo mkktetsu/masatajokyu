@@ -55,7 +55,6 @@
 }
 .header__name {
     width: 171px;
-   // margin-right: auto;
     margin-left: 5px;
     @include mq("lg") {
         width: 132px;
@@ -74,7 +73,6 @@
 }
 .header__items {
     display: flex;
- //   margin-left: -90px;
     height: inherit;
 }
 .header__item {
@@ -82,9 +80,6 @@
     font-size: 18px;
     height: inherit;
     font-weight: 500;
- //  padding: 24px 0px;
-  //  margin-left: 45px;
-  //  margin-top: 35px;
 }
 .header__item a{
     color: $white;
@@ -181,7 +176,6 @@
 }
 .drawer-menu__inner {
     display: flex;
-//    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -192,8 +186,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    //margin-top: 27px;
-    //margin-bottom: 80px;
 }
 .drawer-menu__item {
     display: inline-block;
@@ -211,13 +203,11 @@
     width: 200px;
     padding-bottom: 25px;
     text-align: center;
-   // border-bottom: 1px solid $gray2;
 }
 .drawer-menu__contact {
     margin-top: 40px;
 }
 .drawer-menu__link.drawer-menu__link--contact {
- //   background-color: $black1;
     padding: 14px 14px;
     border: 1px solid $white;
     border-radius: 10px;
@@ -236,7 +226,6 @@
 @media screen and (max-width: 767px) {
     .drawer-menu__item.drawer-menu__item {
         position: relative;
- //       padding-left: 23%; /* 画像の幅に合わせて調整 */
     }
 }
 .drawer-menu__item:not(:nth-child(4))::before {
@@ -247,7 +236,7 @@
     transform: translateY(-50%);
     width: 14px; /* 画像の幅 */
     height: 14px; /* 画像の高さ */
-    background-image: url('/images/title-logo.svg'); /* 画像のURLを指定 */
+    background-image: url('./images/title-logo.svg'); /* 画像のURLを指定 */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -258,7 +247,6 @@
 }
 
 .drawer-menu.is-open {
-    /* display: block; 基本使わない　トランジションが聞かなくなるから */
     opacity: 0;
     visibility: visible;
 }
@@ -291,16 +279,8 @@
     }
 }
 
-.mv__title-inner.mv__title-inner--page-contact {
-   // transform: translate(130%,-240%);
-    @include mq("sp") {
-
-    }
-}
 .mv__title-inner.mv__title-inner--page-about {
-
     transform: translate(-50%,-50%);
-
 }
 
 .mv__title {
@@ -312,12 +292,7 @@
     @include mq("md") {
         font-size: 36px;
         font-weight: $medium;
-        // align-items: center;
-        // white-space: nowrap;
-        // text-align: center; /* 中央揃えを追加 */
-        // letter-spacing: 0.01em;
     }
-
 }
 .mv__title--small {
     color: $white;
@@ -331,7 +306,6 @@
         margin-top: 0;
         font-size: 14px;
         letter-spacing: 0.09em;
-    //    margin-left: -16px;
         padding-top: 10px;
         text-align: center;
     }
@@ -452,11 +426,7 @@
 
 
 .about__section {
- //   display: flex;
-  //  flex-direction: row-reverse;
     margin: 0 auto; /* 左右のマージンを自動で設定して中央に寄せる */
-   // text-align: center; /* テキストを中央寄せにする（内部のテキストがある場合に必要） */
-//    display: block; /* 要素をブロックレベル要素として扱う */
     justify-content: center;
     @include mq("md") {
         display: block;
@@ -517,12 +487,10 @@
     margin-left: 58px;
     margin-top: 129px;
     margin-left: 100px;
-  //  height: 341px;
     @include mq("md") {
         display: flex;
         justify-content: center;
         margin-left: 0;
-  //      height: 250px;
     }
 }
 
@@ -537,7 +505,6 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 600px;
-   // padding-left: 2rem;
     @include mq("md") {
         width: 86%;
         font-size: 14px;
@@ -577,9 +544,7 @@
     padding: 15px 59px;
     font-size: 16px;
     letter-spacing: 0.05;
-    
-
-
+}
 
 
 //サービス--------------------------------------------
@@ -591,11 +556,10 @@
         padding-bottom: 50px;
     }
 }
-.title-wrap--service {
-    padding-top: 74px;
+.service__title-wrap {
+    padding-top: 75px;
 }
 .section-inner.section-inner--service{
-  //  margin-bottom: 60px;
     padding-top: 0;
     display: flex;
     width: 87%;
@@ -609,13 +573,6 @@
         }
 }
 
-// .service__title-wrap {
-//     margin-top: 70px;
-//     @include mq("sp") {
-//     margin-top: 60px;
-//     }
-// }
-//タブ↓
 .tab {
     padding-top: 35px;
     width: 100%;
@@ -626,7 +583,6 @@
 
 .tab__list {
 display: flex;
-//align-items: center;
 justify-content: center;
 gap: 15px;
 }
@@ -642,7 +598,6 @@ gap: 15px;
     color: #2c2c2c;
     padding: 10px 15px;
     background-color: $black3;
-  //  transition: all 0.4s ease-out;
     transition: background-color 0.4s ease-out;
     position: relative;
     overflow: hidden;
@@ -708,13 +663,7 @@ margin-top: 45px;
     transition: all 0.4s ease-out;
     @include mq("md") {
         padding-top: 8px;
-       // max-width: 250px;
     }
-    // &:hover {
-    //     transform: translateY(-8px) scale(1.03);
-    //     box-shadow: 5px 5px 10px #1D1D1D;
-    //     opacity: 0.95;
-    // }
 }
 .tab__text--on {
     font-family: $forth-font;
@@ -733,8 +682,6 @@ margin-top: 45px;
     top: 0;
     left: 0;
     @include mq("md") {
-      //  font-size: 14px;
-      //  width: 80px;
     }
 
 }
@@ -779,7 +726,6 @@ margin-top: 45px;
     @include mq("md") {
         line-height: 1.538;
         letter-spacing: -0.9px;
-       // max-width: 218px;
         margin-bottom: 30px; 
     }
 }
@@ -846,7 +792,6 @@ margin-top: 45px;
 .news__item--label{
     width: 97px;
     outline: 5px;
-   // margin-left: 13px;
 }
 .news__item--label-large {
     width: 100%;
@@ -972,8 +917,6 @@ margin-top: 45px;
  //   padding-left: 10%;
     flex-direction: column; /* 子要素を縦に配置 */
     justify-content: center; /* 子要素を中央に配置 */
-   // align-items: center; /* 子要素を中央に配置 */
-    //adding-bottom: 45px; /* 必要に応じて調整 */
     @include mq("lg") {
         width: 100%;
         padding-bottom: 60px;
@@ -1000,12 +943,6 @@ margin-top: 45px;
 }
 
 
-// .contact-title-wrap {
-//     padding-top: 55px;
-//     @include mq("sp") {
-//         padding-top: 0;
-//         }
-// }
 .contact__title-inner {
     padding-top: 50px;
     @include mq("md") {
@@ -1015,7 +952,6 @@ margin-top: 45px;
 .contact__title-wrap {
     padding-top: 75px;
     padding-left: 50px;
-   // padding-right: 55px;
         @include mq("md") {
             padding-top: 45px;
             padding-left: 4%;
@@ -1025,7 +961,6 @@ margin-top: 45px;
 
 .contact__text {
     text-align: center;
-   // margin: 0 auto;
     @include mq("lg") {
     text-align: center;
     font-size: 13px;
@@ -1035,7 +970,6 @@ margin-top: 45px;
         }
 }
 .contact-text.text.text--white {
-  //  margin-top: -10px;
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -1092,7 +1026,6 @@ margin-top: 45px;
 .contact-img {
     width: 100%;
     object-fit: cover;
-  //  height: 100%;
     display: block;
 }
 //フッター-----------------------------------------
@@ -1114,7 +1047,6 @@ footer {
     color: $white;
     @include mq("md") {
         font-size: 13px;
-       // padding-top: 10px;
         font-weight: 300;
     }
 }
@@ -1128,12 +1060,12 @@ footer {
     margin-right: calc(50% - 50vw);
     height: 543px;
     padding-top: 37.708%; //上記アスペクト比の代わり
-    background-image: url(/images/pc2__about-bg.jpg);
+    background-image: url(./images/pc2__about-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include mq("md") {
-        background-image: url(/images/pc2__about-bg-sp.jpg);
+        background-image: url(./images/pc2__about-bg-sp.jpg);
         width: 100vw;
         height: 445px;
         
@@ -1179,7 +1111,7 @@ footer {
     }
 }
 .page-about__section-title--none-after::before {
-    background-image: url(/images/title-logo.svg);
+    background-image: url(./images/title-logo.svg);
     position: absolute;
     font-family: $forth-font;
     content:"";
@@ -1204,7 +1136,7 @@ footer {
     }
 }
 .mv__page-about {
-    background-image: url(/images/pc2__about-bg.jpg);
+    background-image: url(./images/pc2__about-bg.jpg);
  //   width: 1440px;
     max-width: 100%;
     height: 534px;
@@ -1214,7 +1146,7 @@ footer {
     overflow: hidden;//必要？
     z-index: 100;
     @include mq("md") {
-        background-image: url(/images/pc2__about-bg-sp.jpg);
+        background-image: url(./images/pc2__about-bg-sp.jpg);
         display: flex;
         width: auto;
         height: 445px;
@@ -1231,19 +1163,10 @@ footer {
         margin-left: 45px;
     }
 }
-
-//.page-about__mv-title--about {
-//    position: absolute;
-//    top: 50%;
-//    left: 50%;
-   // transform: translateX(50%);
-//}
 .greeting {
     margin-top: 20px;
-   // max-width: 325px;
     @include mq("md") {  
         margin: 0 auto;
-       // max-width: 80%;
     }
 }
 .page-about__message {
@@ -1278,7 +1201,6 @@ footer {
         font-size: 15px;
         line-height: 1.7;
         margin: 0 auto;
-      //  min-width: 220px;
     }
 }
 .page-about__message-text {
@@ -1290,7 +1212,6 @@ footer {
     letter-spacing: 0.05em;
     line-height: 2;
     @include mq("md") {
- //       margin: 0 20px 0;
         text-align-last: left;
         margin-top: 30px;
         font-size: 16px;
@@ -1300,13 +1221,11 @@ footer {
         margin-right: auto;
     }
     @include mq("sp") {
-    //    letter-spacing: -0.05em;
         margin: 20px 30px 0; 
         text-align: left;
         font-weight: $regular;
         font-size: 14px;
         line-height: 1.86;
-        
     }
 }
 .title-wrap__page-about {
@@ -1345,7 +1264,6 @@ footer {
     @include mq("md") {  
         margin: 0 auto;
         width: 250px;
-     //   max-width: 80%;
     }
 }
 .text.text--white.page-about__message-flex-text{
@@ -1353,7 +1271,6 @@ footer {
     font-family: $second-font;
     font-weight: 300;
     line-height: 2;
-  //  letter-spacing: 0.05em;
 
     @include mq("md") {  
         max-width: 97%;
@@ -1403,7 +1320,6 @@ footer {
     margin: 0 auto;
     max-width: 734px;
     width: 100%;
- //   max-width: 734px;
     @include mq("md") {  
         margin: 0 auto;
         padding-top: 35px;
@@ -1443,7 +1359,6 @@ footer {
     max-width: 133px;
     font-family: $second-font;
     font-weight: 300;
-  //  text-align-last: left;
 }
 .profile-item--sub {
 
@@ -1462,13 +1377,11 @@ footer {
  /* マップを包むコンテナ */
 .profile-item {
     position: relative;
-   // width: 730px;
     @include mq("md") {  
         max-width: 285px;
     }
 }
 
-/* iframe */
 iframe {
     width: 412px;
     height: 407px;
@@ -1519,7 +1432,6 @@ iframe {
     left: 0;
     display: flex;
     visibility: hidden;
-   // align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -1601,25 +1513,16 @@ iframe
 }
 
 .mv__page-contact {
-    background-image: url(/images/pc2__contact-bg.jpg);
+    background-image: url(./images/pc2__contact-bg.jpg);
     background-size: cover;
     max-width: 100%;
  //   object-fit: cover;←背景画像では使えない
     height: 534px;
     @include mq("lg") {
-        background-image: url(/images/pc2__contact-bg-sp.jpg);
+        background-image: url(.images/pc2__contact-bg-sp.jpg);
         height: 445px;
     }
 }
-//.page-about__contact-mv-title {
-//    color: $white;
-  //  padding-top: 280px;
-    //padding-left: 550px;
-    //font-size: 38px;
-    //@include mq("lg") {
-    //    display: none;
-    //}
-//}
 .section-title__sub--contact-page {
     color: $black1;
     font-size: 14px;
@@ -1681,13 +1584,11 @@ iframe
 }
 .contact-form-ul {
     font-family: $second-font;
- //   display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
     justify-content: space-between;
     @include mq("lg") {
-     //   max-width: 345px;
         display: block;
         padding: 40px 20px 40px;
     }
@@ -1808,8 +1709,6 @@ iframe
 }
 .radio-container {
     display: flex;
-   // flex-direction: column;
-    //margin-top: 15px;
     @include mq("md") {
         display: block;
         font-size: 14px;//一緒
@@ -1874,7 +1773,6 @@ iframe
 }
 
 .form__textarea {
-  //  width: 360px;
     height: 150px;
     width: 100%;
     @include mq("lg") {
@@ -1917,7 +1815,6 @@ iframe
 }
 .radio-title {
     font-size: 14px;
-   // margin-left: 90px;
 }
 
 .required {
@@ -1946,8 +1843,6 @@ iframe
     max-width: 1250px;
     width: 100%;
     padding: 0 25px;
-   // padding-top: 70px;
-  //  z-index: 10;
     @include mq("md") {
         padding: 0 15px;
         max-width: 600px;
@@ -1973,7 +1868,7 @@ iframe
 
 
 .section-title::before {
-    background-image: url(/images/title-logo.svg);
+    background-image: url(./images/title-logo.svg);
     position: absolute;
     content:"";
     width: 23px;
@@ -2027,7 +1922,7 @@ iframe
 }
 
 .section-title--black::before {
-    background-image: url(/images/title-logo-black.svg);
+    background-image: url(./images/title-logo-black.svg);
 }
 .section-title--black::after {
     color: $black3;

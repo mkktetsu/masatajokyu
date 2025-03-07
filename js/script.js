@@ -61,14 +61,7 @@ $(function () {
     });
 });
 
-// スクロールでヘッダーの色を変更
-// $(window).scroll(function () {
-//     if ($('.mv').height() < $(window).scrollTop()) {
-//         $('.js-header').addClass('change-color');
-//     } else {
-//         $('.js-header').removeClass('change-color');
-//     }
-// });
+
 
 $(window).scroll(function () {
     // `.mv` と `.sub-mv` のどちらかが存在する場合、その高さを取得
@@ -80,16 +73,16 @@ $(window).scroll(function () {
         $('.js-header').removeClass('change-color');
     }
 });
-// XHRリクエスト
-// var xhr = new XMLHttpRequest();
-// xhr.onreadystatechange = function() {
-//     if (xhr.readyState === XMLHttpRequest.DONE) {
-//         if (xhr.status === 200) {
-//             console.log(xhr.responseText);
-//         } else {
-//             console.error('リクエストにエラーが発生しました');
-//         }
-//     }
-// };
-// xhr.open('GET', 'https://example.com/data', true);
-// xhr.send();
+
+//sub-mvのヘッダーcolorを変化させるための高さ取得
+$(window).scroll(function () {
+    // `.sub-mv` があればその高さを使用し、なければ `.mv` の高さを使用する
+    let targetHeight = $('.sub-mv').length ? $('.sub-mv').outerHeight() : $('.mv').outerHeight();
+
+    if ($(window).scrollTop() > targetHeight) {
+        $('.js-header').addClass('change-color');
+    } else {
+        $('.js-header').removeClass('change-color');
+    }
+});
+
